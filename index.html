@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Music</title>
+
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/ciclope-icon.css">
+		<link rel="stylesheet" href="./css/paletas-de-colores.css">
+		<link rel="icon" href="./img/tattoo.png">
+	</head>
+
+	<body class="elegante-oscuro">
+		<section class="fon-1 reproductor">
+			<div class="control">
+				<div class="c-c fon-2"></div>
+				<p class="w-1">Musica de mago de oz</p>
+				<label for="btn-lista" class="c-c fon-2 flex"><i class="ci ci-menu"></i></label>
+			</div>
+
+			<div class="album">
+				<img src="./img/album2.jpg" id="albunes">
+			</div>
+
+			<div class="informacion">
+				<h2>Mägo de Oz</h2>
+				<h5 id="cancion">Bandera Negra</h5>
+			</div>
+
+			<div class="control">
+				<div class="c-c fon-2 pointer flex">
+					<i class="ci ci-backward"></i>
+				</div>
+				<div class="c-m fon-3 pointer flex" id="playpause">
+					<i class="ci ci-play"></i>
+				</div>
+				<div class="c-c fon-2 pointer flex" id="next">
+					<i class="ci ci-forward"></i>
+				</div>
+			</div>
+
+			<audio src="./audio/Mägo de Oz - Bandera Negra.mp3" id="audio"></audio>
+
+			<input type="checkbox" id="btn-lista">
+			<div class="lista fon-2">
+				<div class="cancion fon-1">
+					<div class="texto">
+						<h2>Mägo de Oz</h2>
+						<h5>Bandera Negra</h5>
+					</div>
+
+					<div class="c-c flex fon-3 pointer" onclick="Listado(0)">
+						<i class="ci ci-play"></i>
+					</div>
+				</div>
+				<div class="cancion fon-1">
+					<div class="texto">
+						<h2>Mägo de Oz</h2>
+						<h5>Fiesta Pagana</h5>
+					</div>
+
+					<div class="c-c flex fon-3 pointer" onclick="Listado(1)">
+						<i class="ci ci-play"></i>
+					</div>
+				</div>
+				<div class="cancion fon-1">
+					<div class="texto">
+						<h2>Mägo de Oz</h2>
+						<h5>Que el viento sople a tu favor</h5>
+					</div>
+
+					<div class="c-c flex fon-3 pointer" onclick="Listado(2)">
+						<i class="ci ci-play"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./js/song.js"></script>
+	</body>
+</html>
